@@ -1,5 +1,5 @@
 * {
-    font-family: "Lucida Grande";
+    font-family: cursive;
     margin: 0;
     padding: 0;
 }
@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: rgb(213, 255, 241);
 }
 
 .container {
@@ -17,7 +18,7 @@ body {
 }
 
 header {
-    background-color: #b9a71d;
+    background-color: #004607;
     padding: 20px;
     color: white;
 }
@@ -51,18 +52,48 @@ nav ul li a {
     text-decoration: none;
 }
 
-.flex-list {
-    display: flex;
-    flex-direction: column;
+nav ul li a:hover {
+    color: aqua;
     text-decoration: none;
 }
 
-section {
-    padding: 20px;
+header,
+#all-songs,
+#most-played-songs,
+#add-songs {
+    width: 1170px;
+    padding: 30px;
+    margin: 0 auto;
 }
 
-section h2 {
-    margin-top: 0;
+#all-songs {
+    background-color: rgb(246, 208, 205);
+}
+
+#most-played-songs {
+    background-color: rgb(225, 242, 158);
+}
+
+#add-songs {
+    background-color: rgb(194, 250, 188);
+}
+
+.flex-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-list li {
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(64, 49, 49);
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 form input {
